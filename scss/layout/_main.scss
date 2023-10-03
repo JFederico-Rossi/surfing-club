@@ -34,25 +34,17 @@
         @include linea;
     }
 }
-.cards{
-    @include flex(row, no-wrap, space-evenly, center, 1.25rem);
-    .card-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        gap: 1.25rem;
-        width: 40%;
-        img{
-            align-self: center
-        }
-        h3{
-            @include font-h2;
-            font-weight: bold;
-        }
-        p{
-            text-align: center;
-            font-family: $font-principal;
-        }
+.testimonials{
+    background-image: url("../../assets/img/wave.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    margin-top: 2rem;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 30rem; 
+    width: 100%;   
+    p{
+        text-align: center;
+        color: white;
     }
-}
+    }

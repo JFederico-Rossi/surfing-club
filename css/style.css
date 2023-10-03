@@ -86,24 +86,42 @@ header nav ul li a {
   border: 2.5px solid black;
 }
 
+.testimonials {
+  background-image: url("../../assets/img/wave.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  margin-top: 2rem;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+}
+.testimonials p {
+  text-align: center;
+  color: white;
+}
+
 .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2.15rem;
 }
 .cards .card-item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  gap: 1.25rem;
-  width: 40%;
+  align-items: center;
+  gap: 0.25rem;
+  width: 30%;
 }
 .cards .card-item img {
   align-self: center;
+  background-color: rgba(147, 144, 144, 0.162);
+  border-radius: 50%;
 }
 .cards .card-item h3 {
   color: black;
@@ -114,6 +132,7 @@ header nav ul li a {
   text-align: center;
   padding-top: 0.625rem;
   font-weight: bold;
+  padding-top: 0.01rem;
 }
 .cards .card-item p {
   text-align: center;
