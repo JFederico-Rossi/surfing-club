@@ -1,0 +1,24 @@
+header{ 
+    div{
+        margin: 0 35% 0 25%;
+        img{
+            height: 6.25rem;
+            width: 12.5rem;
+            margin: 0 10% 0 30%;
+        }
+    }
+    nav{
+        border-top: solid lightgray 1px;
+        padding-top: .625rem;
+        ul{
+            @include flex (row, wrap, center, center, 1.25rem);
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    @include font(black, $font-principal, 700, none, none);
+                    }
+                }  
+            }
+        }
+}

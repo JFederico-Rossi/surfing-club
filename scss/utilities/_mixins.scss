@@ -1,0 +1,32 @@
+@mixin flex ($direction, $wrap, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin font ($color, $family, $weight, $height, $shadow){
+    color: $color;
+    font-family: $family;
+    font-weight: $weight;
+    line-height: $height;
+    text-shadow: $shadow;
+}
+
+@mixin font-h2{
+    color: black;
+    font-family: $font-principal;
+    font-weight: 600;
+    line-height: 3.25rem;
+    text-shadow:0.025rem 0.025rem #000003;
+    text-align: center;
+    padding-top: .625rem;
+}
+
+@mixin linea {
+    width: 8%;
+    margin: .3125rem auto .3125rem auto;
+    border: 2.5px solid black;
+    }

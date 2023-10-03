@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@100;300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header div {
+  margin: 0 35% 0 25%;
+}
+header div img {
+  height: 6.25rem;
+  width: 12.5rem;
+  margin: 0 10% 0 30%;
+}
+header nav {
+  border-top: solid lightgray 1px;
+  padding-top: 0.625rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "K2D", sans-serif;
+  font-weight: 700;
+  line-height: none;
+  text-shadow: none;
+}
+
+.surfing div h2 {
+  color: black;
+  font-family: "K2D", sans-serif;
+  font-weight: 700;
+  line-height: none;
+  text-shadow: none;
+  text-align: center;
+  padding-top: 0.625rem;
+}
+.surfing div .linea {
+  width: 8%;
+  margin: 0.3125rem auto 0.3125rem auto;
+  border: 2.5px solid black;
+}
+.surfing div p {
+  color: black;
+  font-family: "K2D", sans-serif;
+  font-weight: 300;
+  line-height: none;
+  text-shadow: none;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+}
+.gallery img {
+  width: 33.3%;
+  height: 18.75rem;
+  filter: saturate(1);
+}
+
+.about h2 {
+  color: black;
+  font-family: "K2D", sans-serif;
+  font-weight: 600;
+  line-height: 3.25rem;
+  text-shadow: 0.025rem 0.025rem #000003;
+  text-align: center;
+  padding-top: 0.625rem;
+}
+.about .linea {
+  width: 8%;
+  margin: 0.3125rem auto 0.3125rem auto;
+  border: 2.5px solid black;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.25rem;
+}
+.cards .card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1.25rem;
+  width: 40%;
+}
+.cards .card-item img {
+  align-self: center;
+}
+.cards .card-item h3 {
+  color: black;
+  font-family: "K2D", sans-serif;
+  font-weight: 600;
+  line-height: 3.25rem;
+  text-shadow: 0.025rem 0.025rem #000003;
+  text-align: center;
+  padding-top: 0.625rem;
+  font-weight: bold;
+}
+.cards .card-item p {
+  text-align: center;
+  font-family: "K2D", sans-serif;
+}
+
+.slides {
+  margin-top: 1.25rem;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-snap-type: y none;
+}
+.slides div {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: 25rem;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  background: rgba(136, 202, 207, 0.39);
+  justify-content: center;
+  align-items: center;
+  font-size: 6.25rem;
+}
+.slides div img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
