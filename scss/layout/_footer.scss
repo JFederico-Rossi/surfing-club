@@ -1,0 +1,73 @@
+// footer{    
+//     div{
+//         display: flex;
+//         flex-direction: column;
+//         width: 100%;
+//         height: 15.625rem;
+//         p{
+//             display: flex;
+//             align-self: center;
+//             font-family: $font-principal;
+//             text-align: center;
+//             span{
+//                 color: #CFDFDF;
+//             }
+//             span:hover::before{
+//                 content: "<";
+//             }
+//             span:hover::after{
+//                 content: ">";
+//             }
+//             span:hover{
+//                 background-color: #CFDFDF;
+//                 color: white;
+//             }
+//         }
+//         img{
+//             height: 100%;
+//             width: 100%;
+//         }
+//     }
+// }
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+    background-image: url("../../assets/img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 18.75rem;
+    width: 100%;
+    padding-top: 4.5625rem;
+    p{
+        display: flex;
+        flex-direction: row;
+        gap: .325rem;
+        align-self: center;
+        font-family: $font-principal;
+        text-align: center;
+        span{
+            color: white;
+        }
+        span:hover::before{
+            content: "<";
+        }
+        span:hover::after{
+            content: ">";
+        }
+        span:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+    a{
+        text-align: center;    
+        img{
+            width: 2em;
+            height: 2em;
+            align-self: center;
+        }
+    }
+}
+
+            

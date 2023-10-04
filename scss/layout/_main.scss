@@ -11,8 +11,8 @@
         p{
             @include font(black, $font-principal, 300, none, none);
             text-align: center;
-            width: 50%;
-            margin-left: 25%;
+            width: 70%;
+            margin-left: 15%;
             margin-bottom: 2rem;
         }
     }
@@ -22,7 +22,7 @@
     width: 100%;
     img{
         width: 33.3%;
-        height: 18.75rem;
+        height: 12.65em;
         filter: saturate(1);
     }
 }
@@ -73,4 +73,32 @@
             }
         }
     }
+}
+
+.towards{
+    display: flex;
+    flex-direction: column;
+    div{
+        display: flex;
+        flex-direction: column;
+        h2{
+            @include font(black, $font-principal, 700, none, none);
+            text-align: center;
+            padding-top: .625rem;
+        }
+        .linea{
+            @include linea;
+        }
+        p{
+            @include font(black, $font-principal, 300, none, none);
+            text-align: center;
+            width: 50%;
+            margin-left: 25%;
+            margin-bottom: 2rem;
+        }
     }
+    img{
+        width: 12.5rem;
+        align-self: center;
+    }
+} 
