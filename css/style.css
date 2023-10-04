@@ -5,13 +5,16 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
 header div {
-  margin: 0 35% 0 25%;
+  align-self: center;
+  width: 40%;
 }
 header div img {
-  height: 6.25rem;
-  width: 12.5rem;
-  margin: 0 10% 0 30%;
+  width: 100%;
 }
 header nav {
   border-top: solid lightgray 1px;
@@ -87,8 +90,12 @@ header nav ul li a {
 }
 
 .testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../../assets/img/wave.jpg");
   background-size: 100%;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.3);
   background-position: bottom;
   margin-top: 2rem;
   background-repeat: no-repeat;
@@ -99,6 +106,25 @@ header nav ul li a {
 .testimonials p {
   text-align: center;
   color: white;
+  width: 60%;
+  padding-top: 4.875rem;
+}
+.testimonials .redes-sociales {
+  display: flex;
+}
+.testimonials .redes-sociales div {
+  display: flex;
+  height: 3.125rem;
+  width: 3.125rem;
+  background-color: rgba(255, 255, 255, 0.599);
+  border-radius: 50%;
+}
+.testimonials .redes-sociales div a img {
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: contain;
+  overflow: hidden;
+  padding: 9px 0 0 13px;
 }
 
 .cards {
@@ -119,6 +145,7 @@ header nav ul li a {
   width: 30%;
 }
 .cards .card-item img {
+  width: 30%;
   align-self: center;
   background-color: rgba(147, 144, 144, 0.162);
   border-radius: 50%;
@@ -137,31 +164,6 @@ header nav ul li a {
 .cards .card-item p {
   text-align: center;
   font-family: "K2D", sans-serif;
-}
-
-.slides {
-  margin-top: 1.25rem;
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-snap-type: y none;
-}
-.slides div {
-  display: flex;
-  flex-shrink: 0;
-  width: 100%;
-  height: 25rem;
-  scroll-snap-align: start;
-  scroll-behavior: smooth;
-  background: rgba(136, 202, 207, 0.39);
-  justify-content: center;
-  align-items: center;
-  font-size: 6.25rem;
-}
-.slides div img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

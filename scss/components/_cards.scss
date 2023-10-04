@@ -2,15 +2,13 @@
     @include flex(row, no-wrap, center, center, 2.15rem);
     .card-item{
         @include flex (column, wrap, center, center, 0.25rem);
-      
         width: 30%;
         img{
+            width: 30%;;
             align-self: center;
             background-color: rgba(147, 144, 144, 0.162);
             border-radius: 50%;
-            
         }
-        
         h3{
             @include font-h2;
             font-weight: bold;
