@@ -93,7 +93,7 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../assets/img/wave.jpg");
+  background-image: url("../assets/img/wave.jpg");
   background-size: 100%;
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.3);
   background-position: bottom;
@@ -169,12 +169,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../../assets/img/wave.svg");
+  background-image: url("../assets/img/wave.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 18.75rem;
   width: 100%;
-  padding-top: 4.5625rem;
+  padding-top: 6%;
 }
 footer p {
   display: flex;
@@ -204,6 +204,10 @@ footer a img {
   width: 2em;
   height: 2em;
   align-self: center;
+}
+footer a img:hover {
+  background-color: rgba(255, 255, 255, 0.707);
+  border-radius: 50%;
 }
 
 .cards {
