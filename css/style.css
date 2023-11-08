@@ -16,26 +16,47 @@ header div {
 header div img {
   width: 100%;
 }
-header nav {
+
+nav {
   border-top: solid lightgray 1px;
-  padding-top: 0.625rem;
 }
-header nav ul {
+
+ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
+  margin: 0 auto;
   list-style: none;
 }
-header nav ul li a {
+ul li a {
   text-decoration: none;
   color: black;
   font-family: "K2D", sans-serif;
   font-weight: 700;
   line-height: none;
   text-shadow: none;
+}
+
+.toggle-menu {
+  margin: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: none;
+  background-image: url("../assets/img/menu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+}
+
+.dropdown-menu {
+  display: none;
+  border-top: solid lightgray 1px;
+  padding-top: 0.625rem;
+  position: absolute;
+  top: 100%; /* Position below the button */
 }
 
 .surfing div h2 {
@@ -210,6 +231,107 @@ footer a img:hover {
   border-radius: 50%;
 }
 
+@media (max-width: 1000px) {
+  footer {
+    background-position: 0 35%;
+  }
+  body {
+    height: fit-content;
+  }
+}
+@media (max-width: 760px) {
+  .card-item p span {
+    display: none;
+  }
+  .towards div p span {
+    display: none;
+  }
+  footer {
+    height: fit-content;
+    background-position: 250%;
+    gap: 1px;
+    padding-top: 5rem;
+  }
+  footer a img {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-item img {
+    height: 25rem !important;
+  }
+  .testimonials {
+    background-position: center !important;
+    background-size: 200%;
+  }
+  .about .cards h3 {
+    font-size: 1.25rem;
+  }
+  footer {
+    background-image: none;
+    background-color: #CFDFDF;
+    height: 8.95rem;
+    padding-top: 3rem;
+    margin-top: 2rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  footer img {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 498px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header div {
+    width: 60%;
+  }
+  header nav {
+    display: none !important;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 1rem;
+  }
+  header .toggle-menu {
+    display: flex;
+    align-items: center;
+  }
+  header .dropdown-menu {
+    border-top: solid lightgray 1px;
+    padding-top: 0.625rem;
+    width: fit-content;
+    display: none;
+    position: absolute;
+    top: 19%;
+    right: 0;
+  }
+  header .dropdown-menu .nav-list {
+    flex-direction: column;
+  }
+  .cards .card-item h3 {
+    line-height: initial !important;
+  }
+  .testimonials {
+    background-size: 200%;
+    height: 24.5rem;
+    padding-bottom: 1rem;
+  }
+  footer {
+    background-color: #CFDFDF;
+    height: 5.75rem;
+    margin-top: 1rem;
+  }
+  footer a img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: 4.2rem;
+  }
+}
 .cards {
   display: flex;
   flex-direction: row;

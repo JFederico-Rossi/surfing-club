@@ -1,0 +1,31 @@
+@media (max-width: 700px){
+    .carousel-item img{
+        height: 25rem !important;
+    }
+
+    .testimonials {
+        background-position: center !important;
+        background-size: 200%;
+    }
+
+    .about{
+        .cards{
+            h3{
+                font-size: 1.25rem;
+            }
+        }
+    }
+    footer{
+        background-image: none;
+        background-color: #CFDFDF;
+        height: 8.95rem;
+        padding-top: 3rem;
+        margin-top: 2rem;
+        p{
+         font-size: 0.90rem;
+        }
+        img{
+            margin-bottom: 3rem;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@media (max-width: 760px){
+
+.card-item{
+    p{
+        span{
+            display: none;
+        }
+    }
+}
+
+.towards {
+    div{
+        p{
+            span{
+                display: none;
+            }
+        }
+    }
+}
+footer{
+    height: fit-content;
+    background-position: 250%;
+    gap: 1px;
+    padding-top: 5rem;
+
+        a img{
+            margin-bottom: 10px;
+        }
+}
+
+}

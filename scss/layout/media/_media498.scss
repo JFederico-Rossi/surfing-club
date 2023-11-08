@@ -1,0 +1,62 @@
+@media (max-width: 498px){
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        div{
+            width: 60%;
+        }
+        nav{
+            display: none !important;
+            ul{
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 1rem;
+            
+            }
+        }
+
+        .toggle-menu{
+            display: flex;
+            align-items: center;
+        }
+        .dropdown-menu{
+            border-top: solid lightgray 1px;
+            padding-top: .625rem;
+            width: fit-content;
+            display: none;
+            position: absolute;
+            top: 19%;
+            right: 0; 
+            .nav-list{
+                flex-direction: column;
+            }
+        }
+    }
+
+
+
+
+    .cards .card-item h3 {
+        line-height: initial !important;
+    }
+
+.testimonials{
+    background-size: 200%;
+    height: 24.5rem;
+    padding-bottom: 1rem;
+    }
+
+    footer{
+        background-color: #CFDFDF;
+        height: 5.75rem;
+        margin-top: 1rem;
+            a{
+                img{
+                    width: 1.5em;
+                    height: 1.5em;
+                    margin-bottom: 4.2rem;
+                }
+        }
+     }
+}

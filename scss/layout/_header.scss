@@ -8,11 +8,13 @@ header{
             width: 100%;
         }
     }
+    }
     nav{
         border-top: solid lightgray 1px;
-        padding-top: .625rem;
+        }
         ul{
             @include flex (row, wrap, center, center, 1.25rem);
+            margin: 0 auto;
             list-style: none;
             li{
                 a{
@@ -21,5 +23,21 @@ header{
                     }
                 }  
             }
+        .toggle-menu{
+            margin: 2rem;
+            width: 2.2rem;
+            height: 2.2rem;
+            display: none;
+            background-image: url("../assets/img/menu.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0.5rem;
         }
-}
+        .dropdown-menu {
+            display: none;
+            border-top: solid lightgray 1px;
+            padding-top: .625rem;
+            position: absolute;
+            top: 100%; /* Position below the button */
+        }
+

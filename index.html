@@ -15,16 +15,16 @@
     <title>Surfing Club</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./assets/img/icon.png")>
+    <link rel="shortcut icon" href="./assets/img/icon.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
    <header>
-        <div>
+        <div class="logo">
             <img src="./assets/img/logo.png" alt="logo">
         </div>
-        <nav>
-            <ul>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#">GALLERY</a></li>
@@ -32,6 +32,16 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
+        <button id="toggle-menu" class="toggle-menu"></button>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <ul class="nav-list">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
    </header>
    
    <main>
@@ -91,12 +101,12 @@
             <div class="card-item">    
                 <img src="./assets/img/icon-1.png" alt="icon of a surfer walking">
                 <h3>SURF SCHOOLS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iste, in autem fuga sed mollitia temporibus consequuntur voluptatem id veniam. Architecto porro ad facilis. Dicta repellendus molestias cum assumenda quas!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iste, in autem fuga sed mollitia temporibus <span>consequuntur voluptatem id veniam. Architecto porro ad facilis. Dicta repellendus molestias cum assumenda quas!</span></p>
             </div>
             <div class="card-item">    
                 <img src="./assets/img/icon-2.png" alt="icon of a surfer surfing">
                 <h3>SURF SPORT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iste, in autem fuga sed mollitia temporibus consequuntur voluptatem id veniam. Architecto porro ad facilis. Dicta repellendus molestias cum assumenda quas!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iste, in autem fuga sed mollitia temporibus <span>consequuntur voluptatem id veniam. Architecto porro ad facilis. Dicta repellendus molestias cum assumenda quas!</span></p>
             </div>
         </section>
     </section>
@@ -114,7 +124,7 @@
         <div>
             <h2>TOWARDS WIND AND WAVES</h2>
             <div class="linea"></div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus quis necessitatibus id reiciendis temporibus itaque dignissimos, cumque saepe ab eos voluptas accusantium voluptatibus quasi vitae fugiat illum delectus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eius veritatis sequi voluptas velit ducimus laborum, voluptates harum deserunt aperiam placeat labore praesentium magnam. Dignissimos est voluptatem exercitationem veritatis rerum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus quis necessitatibus id reiciendis temporibus itaque dignissimos, cumque saepe ab eos voluptas accusantium voluptatibus quasi vitae fugiat illum delectus eius. <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eius veritatis sequi voluptas velit ducimus laborum, voluptates harum deserunt aperiam placeat labore praesentium magnam. Dignissimos est voluptatem exercitationem veritatis rerum!</span></p>
         </div>
         <img src="/assets/img/van.png" alt="">
     </section>
@@ -127,6 +137,7 @@
 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>
