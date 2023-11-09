@@ -45,7 +45,7 @@ ul li a {
   width: 2.2rem;
   height: 2.2rem;
   display: none;
-  background-image: url("../assets/img/menu.png");
+  background-image: url("../../assets/img/menu.png");
   background-position: center;
   background-repeat: no-repeat;
   padding: 0.5rem;
@@ -307,26 +307,32 @@ footer a img:hover {
     width: fit-content;
     display: none;
     position: absolute;
-    top: 19%;
+    top: 15%;
     right: 0;
   }
   header .dropdown-menu .nav-list {
     flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
-  .cards .card-item h3 {
+  header .dropdown-menu .nav-list li:hover {
+    background-color: lightgray;
+  }
+  header .cards .card-item h3 {
     line-height: initial !important;
   }
-  .testimonials {
+  header .testimonials {
     background-size: 200%;
     height: 24.5rem;
     padding-bottom: 1rem;
   }
-  footer {
+  header footer {
     background-color: #CFDFDF;
     height: 5.75rem;
     margin-top: 1rem;
   }
-  footer a img {
+  header footer a img {
     width: 1.5em;
     height: 1.5em;
     margin-bottom: 4.2rem;
